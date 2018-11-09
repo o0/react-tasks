@@ -1,9 +1,9 @@
 // Вопрос: почему не работает код
 
 class Button extends React.Component {
-	constructor(props) {
-  	this.state = {
-    	clicked: 0
+  constructor(props) {
+    this.state = {
+      clicked: 0
     };
   }
 
@@ -12,8 +12,8 @@ class Button extends React.Component {
   }
 
   onClick() {
-  	this.setState({
-    	clicked: this.state.clicked + 1
+    this.setState({
+      clicked: this.state.clicked + 1
     });
   }
 }

@@ -1,10 +1,10 @@
 // Вопрос: ну теперь-то всё хорошо?
 
 class Button extends React.Component {
-	constructor(props) {
-  	super(props);
-  	this.state = {
-    	clicked: 0,
+  constructor(props) {
+    super(props);
+    this.state = {
+      clicked: 0,
       redHot: false,
     };
   }
@@ -16,13 +16,13 @@ class Button extends React.Component {
   }
 
   onClick() {
-  	this.setState({
-    	clicked: this.state.clicked + 1
+    this.setState({
+      clicked: this.state.clicked + 1
     }, () => {
-			this.setState({
+      this.setState({
         redHot: this.state.clicked >= 10,
       });
-		});
+    });
   }
 }
 

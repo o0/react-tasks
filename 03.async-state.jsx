@@ -1,10 +1,10 @@
 // Вопрос: кнопка станет красной...
 
 class Button extends React.Component {
-	constructor(props) {
-  	super(props);
-  	this.state = {
-    	clicked: 0,
+  constructor(props) {
+    super(props);
+    this.state = {
+      clicked: 0,
       redHot: false,
     };
   }
@@ -16,8 +16,8 @@ class Button extends React.Component {
   }
 
   onClick() {
-  	this.setState({
-    	clicked: this.state.clicked + 1
+    this.setState({
+      clicked: this.state.clicked + 1
     });
 
     if (this.state.clicked >= 10) {
