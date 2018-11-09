@@ -9,7 +9,7 @@ class Form extends React.Component {
   }
 
   render() {
-    return <form onInput={this.onInput} onInvalid={this.onInvalid}>
+    return <form onInput={this.onInput} onInvalidCapture={this.onInvalid}>
       {this.state.errorMessage ? <blockquote>{this.state.errorMessage}</blockquote> : null}
 
       Ваше имя: <input name="fullname" type="text" required /><br />
